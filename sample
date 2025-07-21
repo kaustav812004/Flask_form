@@ -1,0 +1,24 @@
+JINJA 2
+
+1. Python variables {{varibales}}
+Eg:
+<p>Welcome {{name}}</p>
+It reduces repetition of code
+
+2. Conditionals
+{% if %}...{% endif %}
+Eg:
+{% if is_topper %}
+<p>You are a topper</p>
+{% else %}
+<p>You need to work hard</p>
+{% endif %}
+
+make sure to use endif atlast and endfor if for loop is used
+{% for subject in subjects %}
+<li> {{subject}} </li>
+{% endfor %}
+
+{% extends base.html %}
+{% block title %} Home Page {% endblock %}
+{% block content %} content {% endblock %}
